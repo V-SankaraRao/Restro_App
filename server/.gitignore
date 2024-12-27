@@ -1,0 +1,6 @@
+node_modules
+.env
+package-lock.json
+
+# Build files (if any)
+/build
