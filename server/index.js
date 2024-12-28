@@ -12,9 +12,16 @@ app.use(express.json());
 
 app.use(cors());
 
-mongoose.connect('mongodb://localhost:27017/credentialsData').then(() => {
+// mongoose.connect('mongodb+srv://<db_username>:<db_password>@logindata.75vtd.mongodb.net/?retryWrites=true&w=majority&appName=LoginData/credentialsData').then(() => {
+//     console.log('Database connected');
+//   }).catch(err => console.log('Database connection error:', err));
+mongoose.connect(process.env.MONGO_URL)
+  .then(() => {
     console.log('Database connected');
-  }).catch(err => console.log('Database connection error:', err));
+  })
+  .catch(err => console.log('Database connection error:', err));
+
+
 
 app.use('/',userRoutes);
 
