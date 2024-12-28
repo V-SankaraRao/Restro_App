@@ -15,7 +15,7 @@ app.use(cors({origin:"https://samosa-singh-app.onrender.com",}));
 // mongoose.connect('mongodb+srv://<db_username>:<db_password>@logindata.75vtd.mongodb.net/?retryWrites=true&w=majority&appName=LoginData/credentialsData').then(() => {
 //     console.log('Database connected');
 //   }).catch(err => console.log('Database connection error:', err));
-mongoose.connect(process.env.MONGO_URL)
+mongoose.connect("mongodb+srv://vsankararao143:Vsankar143@login.jhtsj.mongodb.net/?retryWrites=true&w=majority&appName=login")
   .then(() => {
     console.log('Database connected');
   })
