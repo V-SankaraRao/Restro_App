@@ -10,7 +10,7 @@ app.use(express.json());
 
 
 
-app.use(cors());
+app.use(cors({origin:"https://restro-app-backend.onrender.com",}));
 
 // mongoose.connect('mongodb+srv://<db_username>:<db_password>@logindata.75vtd.mongodb.net/?retryWrites=true&w=majority&appName=LoginData/credentialsData').then(() => {
 //     console.log('Database connected');
