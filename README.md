@@ -1,4 +1,4 @@
-Samosa Singh E-Commerce Website
+Samosa Singh E-Commerce Website https://samosa-singh-app.onrender.com/
 
 Welcome to the Samosa Singh E-Commerce platform, an online store for delicious samosas. Built with the MERN Stack, it features JWT authentication, Stripe payment integration, and a responsive UI for a seamless experience.
 
